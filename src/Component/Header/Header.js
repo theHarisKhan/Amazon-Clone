@@ -1,6 +1,5 @@
 import React from 'react'
 import './Header.css'
-import SearchIcon from './SearchIcon.png'
 import AddCartIcon from './carticon.png'
 import {Link} from 'react-router-dom'
 import { useStateValue } from '../ContextAPI/StateProvider'
@@ -14,17 +13,18 @@ function Header() {
             auth.signOut()
     }
 
+    const NavBar = document.querySelector('.header')
+    window.onscroll = () => {
+        window.scrollY > 200 ? NavBar?.classList.add('Bk--active') : NavBar?.classList.remove('Bk--active')
+    }
+
     return (
         <div className="header">
 
             <Link to="/">
-                <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" className="logo"/>
+                <img src="https://download.logo.wine/logo/Amazon_(company)/Amazon_(company)-Logo.wine.png" alt="amazon logo" className="logo"/>
             </Link>
 
-            <div className="header__search">
-                <input type="text" className="search__input"/>
-                <img src={SearchIcon} alt="icon" className="search__icon"/>
-            </div>
 
             <div className="header__nav">
 

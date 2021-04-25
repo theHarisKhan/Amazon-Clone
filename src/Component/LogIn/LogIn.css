@@ -69,3 +69,13 @@
   font-size: 12px;
   margin: 20px 0;
 }
+
+@media (max-width: 425px) {
+  .LogIn__container {
+    width: 90%;
+  }
+
+  .register__btn {
+    padding: 10px;
+  }
+}

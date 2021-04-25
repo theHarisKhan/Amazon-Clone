@@ -75,3 +75,19 @@
 .removefrombasket__btn {
   padding: 3px 16px !important;
 }
+
+@media (max-width: 884px) {
+  .checkout {
+    flex-direction: column;
+  }
+
+  .checkoutProduct__info > .product__title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .subtotal {
+    width: 85%;
+  }
+}
