@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react'
 import { useStateValue } from '../ContextAPI/StateProvider'
 import './Checkout.css'
 
-const CheckoutProduct = forwardRef(({id,image,title,price,rating},ref) => {
+const CheckoutProduct = forwardRef(({id,image,title,price,rating, hidebutton},ref) => {
     const [{ basket }, dispatch] = useStateValue()
 
     const RemoveFromBasket = () => {
@@ -28,8 +28,10 @@ const CheckoutProduct = forwardRef(({id,image,title,price,rating},ref) => {
                         <p>⭐</p>
                     ))}
                 </div>
-
-                <button className="removefrombasket__btn" onClick={RemoveFromBasket}>Remove to Basket</button>
+                
+                {!hidebutton && (
+                    <button className="removefrombasket__btn" onClick={RemoveFromBasket}>Remove to Basket</button>
+                )}
             </div>
 
         </div>

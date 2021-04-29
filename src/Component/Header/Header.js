@@ -31,7 +31,7 @@ function Header() {
                 <Link to={!user && "/LogIn" }>
                     <div className="header__option" onClick={handleAuth}>
                         <span className="option__toptxt">
-                            Hello 
+                            Hello  
                         </span>
                         <span className="option__bottomtxt">
                             {user ? 'Sign Out' : 'Sign in'}
@@ -39,14 +39,16 @@ function Header() {
                     </div>
                 </Link>
 
-                <div className="header__option">
-                    <span className="option__toptxt">
-                        Returns
-                    </span>
-                    <span className="option__bottomtxt">
-                        &amp; Orders
-                    </span>
-                </div>
+                <Link to="/orders">
+                    <div className="header__option">
+                        <span className="option__toptxt">
+                            Returns
+                        </span>
+                        <span className="option__bottomtxt">
+                            &amp; Orders
+                        </span>
+                    </div>
+                </Link>
 
                 <Link to="/checkout">  
                     <div className="header__addCart__option">

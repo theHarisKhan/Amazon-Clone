@@ -22,7 +22,9 @@
 }
 
 .addCart__icon {
+  height: 35px;
   width: 35px;
+  object-fit: contain;
 }
 
 .header__nav,

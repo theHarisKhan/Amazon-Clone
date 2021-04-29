@@ -1,0 +1,33 @@
+.Orders {
+  padding: 20px 80px;
+}
+
+.Orders h1 {
+  margin: 30px 0;
+}
+
+.order {
+  padding: 40px;
+  margin: 20px 0;
+
+  border: 1px solid lightgrey;
+  background-color: white;
+  position: relative;
+}
+
+.order__id {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.order__total {
+  font-weight: 500;
+  text-align: right;
+}
+
+@media (max-width: 425px) {
+  .Orders {
+    padding: 20px 0;
+  }
+}

@@ -87,6 +87,10 @@
 }
 
 @media (max-width: 425px) {
+  .checkoutProduct {
+    flex-direction: column;
+    align-items: center;
+  }
   .subtotal {
     width: 85%;
   }
